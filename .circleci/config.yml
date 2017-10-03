@@ -1,0 +1,9 @@
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+      - run: npm install
+      - run: sudo npm install -g brunch
+      - run: brunch build
