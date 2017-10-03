@@ -7,7 +7,7 @@
           <mdc-card-header :title="package.name" :subtitle="package.version" />
           <mdc-card-text> {{ package.description }} </mdc-card-text>
           <mdc-card-actions>
-            <mdc-card-action-button @click="onAction">Action</mdc-card-action-button>
+            <mdc-card-action-button @click="go('/packages/' + package.name)">View Package</mdc-card-action-button>
           </mdc-card-actions>
         </mdc-card>
       </mdc-layout-cell>

@@ -3,3 +3,34 @@ html, body, div:not([class]) {
   height: 100%;
   margin: 0;
 }
+
+.fit {
+  width: auto;
+  height: auto;
+}
+
+/*Vertical centering*/
+.vcenter {
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+/*Horizontal centering*/
+.hcenter {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+/*Margins*/
+.in {
+  margin: 1em;
+}
+
+#app {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '../components/Home'
 import Packages from '../components/Packages'
+import Package from '../components/Package'
 
 Vue.use(Router)
 
@@ -16,6 +17,11 @@ export default new Router({
       path: '/packages',
       name: 'Packages',
       component: Packages
+    },
+    {
+      path: '/packages/:package',
+      name: 'Package',
+      component: Package
     }
   ]
 })
