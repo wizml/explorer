@@ -19,6 +19,8 @@
     "material-design-components"
   ],
   "dependencies": {
+    "express": "^4.16.1",
+    "helmet": "^3.8.2",
     "vue": "^2.4.4",
     "vue-mdc-adapter": "0.0.41",
     "vue-router": "^2.6.0"
