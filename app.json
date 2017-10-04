@@ -1,0 +1,18 @@
+{
+  "name": "explorer",
+  "description": "A frontend for the Wiz Package Registry",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
