@@ -1,1 +1,1 @@
-web: npm install brunch -g && brunch build --production && node index.js
+web: brunch build --production && node server/server.js
