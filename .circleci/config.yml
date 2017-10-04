@@ -6,4 +6,9 @@ jobs:
       - checkout
       - run: npm install
       - run: sudo npm install -g brunch
-      - run: brunch build
+      - run: git checkout deploy
+      - run: brunch build --production
+      - run: git status
+      - run: git add .
+      - run: git commit -m "Deploy $CIRCLE_SHA1"
+      - run: git push origin deploy
