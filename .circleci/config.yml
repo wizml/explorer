@@ -12,6 +12,6 @@ jobs:
             git config --global user.name "Wiz Project Deploy Bot"
       - run: git checkout deploy
       - run: npm run build
-      - run: git add .
+      - run: git add -f public
       - run: git commit -m "Deploy $CIRCLE_SHA1"
       - run: git push origin deploy
