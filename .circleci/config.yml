@@ -16,8 +16,7 @@ jobs:
           name: "Check for changes + deploy"
           command: |
             git status
-            git remote -v
-            if [[ `git status --porcelain` ]]; then
+            if [[ `git status --ignored --porcelain | grep -v node` ]]; then
               echo Changes
               git add -f public
               git commit -m "Deploy $CIRCLE_SHA1"
