@@ -3,7 +3,7 @@
     <Heading :title="title"></Heading>
     <div class="in">
       <h1>{{ $route.params.package }}</h1>
-      <p>README</p>
+      <p>README.md</p>
     </div>
   </div>
 </template>
