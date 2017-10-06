@@ -1,9 +1,10 @@
 {
-  "name": "brunch-vue-mdc",
-  "description": "A Material Web Components Vue Skeleton for Brunch",
+  "name": "wiz-explorer",
+  "description": "A web interface for the Wiz Daemon and Package Manager",
   "version": "0.0.1",
   "scripts": {
-    "start": "brunch watch --server",
+    "start": "http-server -p $PORT",
+    "dev": "brunch watch --server",
     "build": "brunch build --production"
   },
   "author": "Timothy Higinbottom",
@@ -11,14 +12,14 @@
     "url": "https://github.com/tim15/brunch-vue-mdc"
   },
   "keywords": [
-    "brunch",
-    "vue",
-    "vuejs",
-    "mdc",
-    "material-design",
-    "material-design-components"
+    "wiz",
+    "package",
+    "package-manager",
+    "machine-learning",
+    "deep-learning"
   ],
   "dependencies": {
+    "http-server": "^0.10.0",
     "vue": "^2.4.4",
     "vue-mdc-adapter": "0.0.41",
     "vue-router": "^2.6.0"
