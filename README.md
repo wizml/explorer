@@ -1,5 +1,7 @@
 # brunch-vue-mdc
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/wizml/explorer.svg)](https://greenkeeper.io/)
+
 A Material Web Components Vue Skeleton for Brunch
 
 Follows vue [best practices](https://vuejs.org/v2/guide/single-file-components.html), and is uses a simple example from the [vue-cli generator](https://github.com/vuejs/vue-cli).
