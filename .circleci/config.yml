@@ -5,10 +5,13 @@ jobs:
     steps:
       - checkout
       - run: yarn install --frozen-lockfile
-      - run: git status && git diff
+      - run:
+        name: "Configure git"
+        command: |
+          git config --global user.email "deploybot@wizproject.ml"
+          git config --global user.name "Wiz Project Deploy Bot"
       - run: git checkout deploy
       - run: npm run build
-      - run: git status
       - run: git add .
       - run: git commit -m "Deploy $CIRCLE_SHA1"
       - run: git push origin deploy
