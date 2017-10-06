@@ -6,6 +6,7 @@ jobs:
       - checkout
       - run: npm i
       - run: sudo npm install -g brunch
+      - run: git status && git diff
       - run: git checkout deploy
       - run: brunch build --production
       - run: git status
