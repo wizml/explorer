@@ -6,10 +6,10 @@ jobs:
       - checkout
       - run: yarn install --frozen-lockfile
       - run:
-        name: "Configure git"
-        command: |
-          git config --global user.email "deploybot@wizproject.ml"
-          git config --global user.name "Wiz Project Deploy Bot"
+          name: "Configure git"
+          command: |
+            git config --global user.email "deploybot@wizproject.ml"
+            git config --global user.name "Wiz Project Deploy Bot"
       - run: git checkout deploy
       - run: npm run build
       - run: git add .
