@@ -4,7 +4,7 @@ jobs:
       - image: circleci/node:8
     steps:
       - checkout
-      - run: npm install
+      - run: npm i
       - run: sudo npm install -g brunch
       - run: git checkout deploy
       - run: brunch build --production
