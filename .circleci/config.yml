@@ -3,7 +3,20 @@ jobs:
     docker:
       - image: circleci/node:8
     steps:
+      - add_ssh_keys
       - checkout
-      - run: npm install
-      - run: sudo npm install -g brunch
-      - run: brunch build
+      - run: yarn install --frozen-lockfile
+      - run:
+          name: "Configure git"
+          command: |
+            git config --global user.email "deploybot@wizproject.ml"
+            git config --global user.name "Wiz Project Deploy Bot"
+      - run: npm run build
+      - run:
+          name: "Check for changes + deploy"
+          command: |
+            if [[ `git status --porcelain` ]]; then
+              git add -f public
+              git commit -m "Deploy $CIRCLE_SHA1"
+              git push origin deploy
+            fi
