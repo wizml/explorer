@@ -3,12 +3,13 @@ import Router from 'vue-router'
 import Home from '../components/Home'
 import Packages from '../components/Packages'
 import Package from '../components/Package'
+import NotFoundComponent from '../components/NotFound'
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
+  mode: 'history',
+  routes: [{
       path: '/',
       name: 'Home',
       component: Home
@@ -22,6 +23,10 @@ export default new Router({
       path: '/packages/:package',
       name: 'Package',
       component: Package
+    },
+    {
+      path: '*',
+      component: NotFoundComponent
     }
   ]
 })

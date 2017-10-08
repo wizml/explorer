@@ -1,9 +1,9 @@
 <template>
-  <div class="home hcenter">
+  <div class="home hcenter full">
     <Heading :title="title"></Heading>
     <div class="vcenter fit">
       <h1>{{ title }}</h1>
-      <mdc-button raised @click="go('/packages')">Get Started</mdc-button>
+      <mdc-button raised @click="go('packages')">Get Started</mdc-button>
     </div>
   </div>
 </template>
@@ -37,7 +37,7 @@ $mdc-theme-background: #fff;
 
 // TODO: Use SCSS for variables and theming
 // QUESTION: Npm issues causing bug
-// @import "vue-mdc-adapter/components/styles.css";
+// @import "vue-mdc-adapter/components/styles.scss";
 
-@import "vue-mdc-adapter/dist/vue-mdc-adapter.css"
+@import "vue-mdc-adapter/dist/vue-mdc-adapter.min.css"
 </style>
