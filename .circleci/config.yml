@@ -20,5 +20,5 @@ jobs:
               echo Changes
               git add -f public
               git commit -m "Deploy $CIRCLE_SHA1"
-              git push origin deploy
+              git push
             fi
