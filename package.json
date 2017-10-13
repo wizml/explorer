@@ -24,7 +24,7 @@
     "brunch": "^2.10.10",
     "vue": "^2.4.4",
     "vue-mdc-adapter": "^0.0.44",
-    "vue-router": "^2.6.0"
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
