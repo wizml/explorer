@@ -23,7 +23,7 @@
     "http-server": "^0.10.0",
     "brunch": "^2.10.10",
     "vue": "^2.4.4",
-    "vue-mdc-adapter": "^0.0.44",
+    "vue-mdc-adapter": "^0.0.48",
     "vue-router": "^2.6.0"
   },
   "devDependencies": {
