@@ -5,11 +5,11 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Installing packages
-        command: |
-          if [[ $CIRCLE_BRANCH == *"greenkeeper"* ]]; then
-            yarn install
-          else
-            yarn install --frozen-lockfile
-          fi
+          name: Installing packages
+          command: |
+            if [[ $CIRCLE_BRANCH == *"greenkeeper"* ]]; then
+              yarn install
+            else
+              yarn install --frozen-lockfile
+            fi
       - run: npm run build
