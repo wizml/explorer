@@ -21,7 +21,7 @@
   ],
   "dependencies": {
     "http-server": "^0.10.0",
-    "brunch": "^2.10.10",
+    "brunch": "^3.0.0",
     "vue": "^2.4.4",
     "vue-mdc-adapter": "^0.18.2",
     "vue-router": "^2.6.0"
