@@ -20,7 +20,7 @@
     "deep-learning"
   ],
   "dependencies": {
-    "http-server": "^0.10.0",
+    "http-server": "^0.12.2",
     "brunch": "^2.10.10",
     "vue": "^2.4.4",
     "vue-mdc-adapter": "^0.18.2",
